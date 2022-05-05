@@ -1,0 +1,19 @@
+<h1>UCB Datos del Estudiante</h1>
+Ingrese su ID:<br />
+<input type="text" [(ngModel)]="estudiante.id" /><br />
+<div *ngIf="estudiante.id === '12345'">
+  <br />
+  Ingrese su Nombre:<br />
+  <input type="text" [(ngModel)]="estudiante.nombre" /><br />
+  Ingrese su Apellido:<br />
+  <input type="text" [(ngModel)]="estudiante.apellido" /><br />
+  Ingrese su Curso:<br />
+  <input type="text" [(ngModel)]="estudiante.curso" /><br />
+  <br />
+  <b>Su nombre es:</b>
+  <p>{{ estudiante.nombre }}</p>
+  <b>Su apellido es:</b>
+  <p>{{ estudiante.apellido }}</p>
+  <b> curso es:</b>
+  <p>{{ estudiante.curso }}</p>
+</div>
