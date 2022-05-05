@@ -1,19 +1,33 @@
-<h1>UCB Datos del Estudiante</h1>
-Ingrese su ID:<br />
-<input type="text" [(ngModel)]="estudiante.id" /><br />
-<div *ngIf="estudiante.id === '12345'">
-  <br />
-  Ingrese su Nombre:<br />
-  <input type="text" [(ngModel)]="estudiante.nombre" /><br />
-  Ingrese su Apellido:<br />
-  <input type="text" [(ngModel)]="estudiante.apellido" /><br />
-  Ingrese su Curso:<br />
-  <input type="text" [(ngModel)]="estudiante.curso" /><br />
-  <br />
-  <b>Su nombre es:</b>
-  <p>{{ estudiante.nombre }}</p>
-  <b>Su apellido es:</b>
-  <p>{{ estudiante.apellido }}</p>
-  <b> curso es:</b>
-  <p>{{ estudiante.curso }}</p>
+<h1>Formulario Empleado</h1>
+<div class="frames">
+  <div class="frame">
+    <img
+      src="https://www.lancetalent.com/blog/wp-content/uploads/crear-formularios-online-1.png"
+    />
+  </div>
+  <div class="frame">
+    <label for="nombre">Nombre:</label> <br />
+    <input type="text" id="nombre" placeholder="Ingrese su nombre" />
+    <br />
+    <label for="ci">CI:</label> <br />
+    <input type="text" id="ci" placeholder="Ingrese su CI" />
+    <br />
+    <label for="datos.id">ID:</label> <br />
+    <input type="text" [(ngModel)]="datos.id" placeholder="Ingrese su ID" />
+    <br />
+    <label for="id2"> Ingrese su ID:</label><br />
+    <input type="text" [(ngModel)]="empleado.id" /><br />
+  </div>
+</div>
+<div class="form" *ngIf="empleado.id != ''">
+  <div *ngIf="empleado.id === datos.id">
+    <h1>UCB Corp</h1>
+    <br />
+    Departamento:<br />
+    <input type="text" [(ngModel)]="empleado.departamento" /><br />
+    Turno:<br />
+    <input type="text" [(ngModel)]="empleado.turno" /><br />
+    Horario trabajo:<br />
+    <input type="text" [(ngModel)]="empleado.horario" /><br />
+  </div>
 </div>

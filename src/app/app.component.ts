@@ -5,11 +5,13 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  estudiante = {
-    id: 'Ingrese su ID',
-    nombre: 'Ingresar Datos',
-    apellido: 'Ingresar Datos',
-    universidad: 'Ingresar Datos',
-    curso: 'Ingresar Datos',
+  empleado = {
+    id: '',
+    departamento: '',
+    turno: '',
+    horario: '',
+  };
+  datos = {
+    id: '',
   };
 }
